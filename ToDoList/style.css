@@ -1,0 +1,93 @@
+html,body{
+    display: grid;
+    grid-gap: 5px;
+    min-height: 100vh;
+    /*要使用grid-template-areas 需要给每个模块进行grid-areas的名称赋予*/
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas: 
+    "header listInfo"
+    "list listBody"
+    "list listBody";
+
+    /*固定窗口*/
+    width: 100vw;
+    height:100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    grid-area: header;
+    border-color: pink;
+    border: 1px solid rgb(107, 13, 29);
+    
+}
+
+.header h1{
+    font-size: 45px;
+    color: rgb(214, 91, 110);
+    text-align: center;
+    font-variant:small-caps;
+}
+
+.list{
+    grid-area: list;
+    text-align:left;
+    border: 1px solid rgb(107, 13, 29);
+    padding:10px 20px 10px 20px
+}
+
+.list button{
+    background-color: rgb(243, 233, 235);
+    border-style: none;
+    color:rgb(214, 91, 110);
+    width: 200px;
+    height: 40px;
+    font-size:large;
+    font-weight:bolder;
+}
+
+.listul{
+    list-style: none;
+    list-style-position: inside;
+    /*除移默认padding*/
+    padding-left: 0;
+    margin-left:0;
+}
+
+.listul li{
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.listInfo{
+    grid-area: listInfo;
+    border: 1px solid rgb(107, 13, 29);
+    text-align: left;
+    /*内边框 上右下左*/
+    padding:0px 20px 0px 20px
+}
+
+.listInfo h2{
+    font-size: 35px;
+    color: rgb(214, 91, 110);
+}
+
+
+.listBody{
+    grid-area: listBody;
+    border: 1px solid rgb(107, 13, 29);
+    padding:10px 20px 10px 20px
+}
+
+.listBody button{
+    background-color: rgb(243, 233, 235);
+    border-style: none;
+    color:rgb(214, 91, 110);
+    width:80vw;
+    height: 60px;
+    font-size:large;
+    font-weight:bolder;
+}
