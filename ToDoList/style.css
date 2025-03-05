@@ -82,12 +82,41 @@ html,body{
     padding:10px 20px 10px 20px
 }
 
-.listBody button{
+.listBody button[id="taskBtn"]{
     background-color: rgb(243, 233, 235);
     border-style: none;
     color:rgb(214, 91, 110);
     width:80vw;
-    height: 60px;
+    height: 65px;
     font-size:large;
     font-weight:bolder;
+}
+
+#todoList{
+    /*将选框移至最左侧*/
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+}
+
+
+#todoList input[type="text"]{
+    border: none;
+    width: 75vw;
+    height:65px;
+    text-align: left;
+    font-size: large;
+}
+
+#todoList input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    accent-color: rgb(107, 13, 29);
+    margin-right: 10px;
+}
+
+.listBody button[id="deleteBtn"]{
+    height:40px;
+    margin-left: 10px;
+    
 }

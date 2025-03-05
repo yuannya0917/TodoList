@@ -1,3 +1,3 @@
-import { TodoApp } from "./modules/todoApp.js";
+import { List} from "./modules/List.js";
 
-let newApp=new TodoApp;
+let newList=new List;
