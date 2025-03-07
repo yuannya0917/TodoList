@@ -1,3 +1,3 @@
-import { List} from "./modules/List.js";
+import { todoApp } from "./modules/todoApp.js";
 
-let newList=new List;
+const newApp=new todoApp;

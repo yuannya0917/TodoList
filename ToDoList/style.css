@@ -13,7 +13,6 @@ html,body{
     /*固定窗口*/
     width: 100vw;
     height:100vh;
-    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -39,7 +38,7 @@ html,body{
     padding:10px 20px 10px 20px
 }
 
-.list button{
+#ListBtn{
     background-color: rgb(243, 233, 235);
     border-style: none;
     color:rgb(214, 91, 110);
@@ -49,17 +48,12 @@ html,body{
     font-weight:bolder;
 }
 
-.listul{
+#listul{
     list-style: none;
     list-style-position: inside;
     /*除移默认padding*/
     padding-left: 0;
     margin-left:0;
-}
-
-.listul li{
-    border: 1px solid black;
-    padding: 3px;
 }
 
 .listInfo{
